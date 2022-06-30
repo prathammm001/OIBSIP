@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(bg.jpg);
+    display: grid;
+    place-items: center;
+    background-color: #ec1818;
+}
+
+.container {
+    height: 400px;
+    width: 300px;
+    background: black;
+    position: relative;
+}
+
+.title {
+    width: 100%;
+    height: 70px;
+    background: #349aee;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+
+.input-box {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    height: 45px;
+    font-size: 21px;
+    border: none;
+    width: 260px;
+    border-bottom: 2px solid rgb(182, 172, 172);
+    outline: none;
+    background: transparent;
+    padding: 0 10px;
+    color: white;
+}
+
+.line {
+    position: absolute;
+    top: 155px;
+    left: 20px;
+    list-style: none;
+    height: 120px;
+    width: 260px;
+    overflow: auto;
+}
+
+.line li {
+    height: 50px;
+    width: 100%;
+    margin: 4px 0;
+    color: white;
+    position: relative;
+    left: 0;
+    border: 1px solid #1f3148;
+    overflow: hidden;
+}
+
+.btn {
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+    background: #0c0c0c;
+    outline: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.8s ease-in;
+}
+
+.btn:hover {
+    background: transparent;
+    border: 3px solid #eb6208;
+    color: #ec1818;
+    font-size: 22px;
+    border-radius: 4px;
+}
+
+.line li h4 {
+    width: 320px;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.line li .RemovefromList {
+    height: 50px;
+    width: 40px;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: -50px;
+    background: #000000;
+    color: white;
+    transition: 0.7 all ease-in-out;
+}
+
+.line li:hover .RemovefromList {
+    right: 0;
+}
